@@ -1,0 +1,113 @@
+.App {
+  padding:0;
+  margin:0;
+  text-align: center;
+  /*background-image: url('/img/grass01.jpg');*/
+  height:100%;
+}
+
+.Home {
+  padding:0;
+  margin:0;
+  text-align: center;
+  height:100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn-circle.btn-x4 {
+    width: 60px;
+    height: 60px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    margin-left:10px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.blink {
+  margin:5px;
+  min-width:150px;
+}
+
+.wrapperStyles {
+  width:100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+
+.wrapperStyles2 { 
+    width:90%;
+    position:relative; 
+    top:-30px;
+    left:150px; 
+    z-index:1;
+    text-align:left;
+}
+
+.collapseStyles {
+  width: 100%;
+  padding:10px 0px;
+  margin: 0px;
+  position:absolute;
+  top:100px;
+  left:0px;
+  text-align:left;
+  z-index:2;
+}
+
+
+.btn-bandera {
+    width: 60px;
+    height: 60px;
+    padding: 2px 2px;
+    border-radius: 30px;
+    margin-left:10px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.bandera {
+  width:50px;
+}
+
+.logo {
+  margin:10px 0px;
+}

@@ -1,0 +1,28 @@
+.header {
+    height: 100px;
+    width:100%;
+}
+
+.navbar {
+    border-bottom:3px solid #AAA;
+}
+
+h3.titol {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.atitol:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.atitol:hover {
+	color: #F00;
+	text-decoration: none;
+}
+
+a.atitol:visited {
+	color: #FFF;
+	text-decoration: none;
+}

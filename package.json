@@ -2,6 +2,7 @@
   "name": "museu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://34.90.92.235/publica",
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "@material-ui/icons": "^4.0.1",

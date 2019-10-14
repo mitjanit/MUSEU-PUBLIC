@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
+//import {Link} from "react-router-dom";
 import Translate from "./locales/Translate";
 import queryString from 'query-string';
 
@@ -11,15 +11,15 @@ class ProvincePage extends Component {
 
   	const values = queryString.parse(this.props.location.search);
 
-    let urlBack = "/CommunityPage?continent="+values.continent+"&country="+values.country+"&community="+values.community;
+    //let urlBack = "/CommunityPage?continent="+values.continent+"&country="+values.country+"&community="+values.community;
 
     return (
 	      <div className="ProvincePage">
-          <div class="container">
+          <div className="container">
 	          <h2><Translate string="provincia"/> {values.province}</h2>
             <h3>Clubs</h3>
             <hr/>
-            <Clubs />
+            <Clubs provincia={values.province} />
 	        </div>
 	      </div>
     );

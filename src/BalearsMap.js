@@ -105,7 +105,6 @@ class BalearsMap extends Component {
                         onClick={ this.handleClick }
                         data-tip={geography.properties.NAMEUNIT}
                         data-for="balearstip"
-                        onClick={ this.handleClick }
                         style={{
                           default: {
                             fill: colorScale[include.indexOf(geography.properties.NAMEUNIT)],

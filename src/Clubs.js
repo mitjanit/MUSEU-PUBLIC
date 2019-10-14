@@ -17,8 +17,8 @@ class Clubs extends Component {
 
 	componentDidMount() {
 
-		console.log("Intentant accedir a http://34.90.92.235/api/clubs/"+this.props.provincia);
-	     axios.get('http://34.90.92.235/api/clubs/'+this.props.provincia,{
+		console.log("Intentant accedir a http://34.90.92.235/api/provincies/51/clubs/");
+	    axios.get('http://34.90.92.235/api/provincies/51/clubs/',{
 		  method: 'GET',
 		  mode: 'no-cors',
 		  headers: {

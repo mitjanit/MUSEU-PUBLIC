@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ClubsList from './ClubsList.js';
 
-import {dict, URL_API} from './Constants.js'
+import {provs, URL_API} from './Constants.js'
 
 
 class Clubs extends Component {
@@ -17,7 +17,7 @@ class Clubs extends Component {
 
 	componentDidMount() {
 
-		var codiProvincia = dict[this.props.provincia];
+		var codiProvincia = provs[this.props.provincia];
 
 		console.log("Intentant accedir a la API http://34.90.211.155/api/provincies/"+codiProvincia+"/clubs/");
 	    axios.get(URL_API+'provincies/'+codiProvincia+'/clubs/',{

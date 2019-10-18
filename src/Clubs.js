@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ClubsList from './ClubsList.js';
 
+import * from './Constants.js'
+
 import './Movies.css';
 
 
@@ -17,11 +19,7 @@ class Clubs extends Component {
 
 	componentDidMount() {
 
-		// Obtenir codi d eprovincia
-
-		var dict = {};
-		dict['Menorca']=51;
-
+		// Obtenir codi de provincia
 		codiProvincia = dict[this.props.provincia];
 
 		console.log("Intentant accedir a la web http://34.90.211.155/api/provincies/"+codiProvincia+"/clubs/");

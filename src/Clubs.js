@@ -21,7 +21,7 @@ class Clubs extends Component {
 
 		codiProvincia = dict[this.props.provincia];
 
-		console.log("Intentant accedir a la web http://34.90.211.155/api/provincies/"+codiProvincia+"/clubs/");
+		console.log("Intentant accedir a la API http://34.90.211.155/api/provincies/"+codiProvincia+"/clubs/");
 	    axios.get(URL_API+'provincies/'+codiProvincia+'/clubs/',{
 		  method: 'GET',
 		  mode: 'no-cors',

@@ -19,11 +19,10 @@ class Clubs extends Component {
 
 	componentDidMount() {
 
-		// Obtenir codi de provincia
 		codiProvincia = dict[this.props.provincia];
 
 		console.log("Intentant accedir a la web http://34.90.211.155/api/provincies/"+codiProvincia+"/clubs/");
-	    axios.get('http://34.90.211.155/api/provincies/'+codiProvincia+'/clubs/',{
+	    axios.get(URL_API+'provincies/'+codiProvincia+'/clubs/',{
 		  method: 'GET',
 		  mode: 'no-cors',
 		  headers: {

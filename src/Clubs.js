@@ -4,8 +4,6 @@ import ClubsList from './ClubsList.js';
 
 import * from './Constants.js'
 
-import './Movies.css';
-
 
 class Clubs extends Component {
 

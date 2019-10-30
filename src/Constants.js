@@ -1,5 +1,5 @@
 
-export const URL_API = "http://34.90.211.155/api/";
+export const URL_API = "http://admin.museu.org/api/";
 
 export const provs = {};
 

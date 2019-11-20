@@ -19,8 +19,8 @@ class Clubs extends Component {
 
 		var codiProvincia = provs[this.props.provincia];
 
-		console.log("NOU CANVI !!!!!");
-		console.log("Accedirnt a la API http://admin.museu.org/api/provincies/"+codiProvincia+"/clubs/");
+		console.log("NOU CANVI LLEVANT CREDENTIALS !!!!!");
+		console.log("Accedirnt a la API "+URL_API+"provincies/"+codiProvincia+"/clubs/");
 	    axios.get(URL_API+'provincies/'+codiProvincia+'/clubs/',{
 		  method: 'GET',
 		  mode: 'no-cors',
@@ -29,8 +29,8 @@ class Clubs extends Component {
 		    'Content-Type': 'application/json',
 		    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
 		  },
-		  withCredentials: true,
-		  credentials: 'same-origin',
+		  //withCredentials: true,
+		  //credentials: 'same-origin',
 		})
         .then(res => {
           const infoClubs = res.data;

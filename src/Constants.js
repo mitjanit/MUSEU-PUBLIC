@@ -1,5 +1,5 @@
 
-export const URL_API = "http://admin.museu.org/api/";
+export const URL_API = "http://www.museu.org/api/";
 
 export const provs = {};
 

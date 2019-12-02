@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"sel",
+				"selfont"
+			],
+			[
+				"print",
+				"printArray"
+			],
+			[
 				"class",
 				"className"
 			],
@@ -506,14 +514,6 @@
 			[
 				"begin",
 				"beginshape\tbeginShape"
-			],
-			[
-				"best",
-				"bestPhrase"
-			],
-			[
-				"dist",
-				"distGreen"
 			]
 		]
 	},
@@ -597,9 +597,13 @@
 	},
 	"expanded_folders":
 	[
+		"/D/GITHUB/MUSEU"
 	],
 	"file_history":
 	[
+		"/C/Users/ToniMitjanit/Desktop/bookstore/bookstore.html",
+		"/C/Users/ToniMitjanit/Desktop/bookstore/bookstore2.html",
+		"/C/Users/ToniMitjanit/Desktop/bookstore/editor.html",
 		"/D/GITHUB/MUSEU PUBLIC/MUSEU-PUBLIC/src/BalearsMap.js",
 		"/D/GITHUB/MUSEU PUBLIC/MUSEU-PUBLIC/src/locales/ca.json",
 		"/D/GITHUB/MUSEU PUBLIC/MUSEU-PUBLIC/src/locales/en.json",
@@ -724,10 +728,7 @@
 		"/D/GITHUB/Colorama/Colorama/colorama 05 - cosine gradients/build/CosineGradient.pde",
 		"/D/GITHUB/Colorama/Colorama/colorama 03/build/build.pde",
 		"/D/GITHUB/Colorama/Colorama/colorama 02/build/build.pde",
-		"/D/GITHUB/WEB/WEB/JAVASCRIPT/EXEMPLES/64 - IF statement.html",
-		"/D/GITHUB/WEB/WEB/JAVASCRIPT/EXEMPLES/37 - Math round function.html",
-		"/D/GITHUB/WEB/WEB/JAVASCRIPT/CLASSE/functionSUMA.html",
-		"/D/GITHUB/WEB/WEB/JAVASCRIPT/CLASSE/formSUMA.html"
+		"/D/GITHUB/WEB/WEB/JAVASCRIPT/EXEMPLES/64 - IF statement.html"
 	],
 	"find":
 	{
@@ -867,7 +868,7 @@
 		[
 			[
 				"",
-				"D:\\GITHUB\\Colorama\\Colorama\\RGB DISPLACEMENT\\rgb disp 01\\build\\sandboxgg.sublime-project"
+				"D:\\GITHUB\\MUSEU PUBLIC\\MUSEU-PUBLIC\\museu.sublime-project"
 			]
 		],
 		"width": 380.0

@@ -4,6 +4,7 @@ import axios from 'axios';
 import queryString from 'query-string';
 
 import {URL_API} from './Constants.js'
+import JugadorsList from "./JugadorsList.js";
 
  
 class ClubPage extends Component {
@@ -55,8 +56,7 @@ class ClubPage extends Component {
 	          <Link to={"/"}> Home </Link> &nbsp;
 	          <Link to={"/CountryPage"}> BACK </Link> &nbsp;
 	          <p> Info club .... jugadors</p>
-	          <Link to={urlJugadors}> Jugadors </Link>
-
+	          <JugadorsList jugadors={this.state.jugadors} />
 	      </div>
     );
   }

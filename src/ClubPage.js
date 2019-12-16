@@ -25,7 +25,7 @@ class ClubPage extends Component {
 		var codiClub = values.club;
 
 		console.log("Accedint a la API "+URL_API+"/api/clubs/"+codiClub+"/jugadors/");
-	    axios.get(URL_API+'/api/clubs/'+codiClub+'/jugadors/',{
+	    axios.get(URL_API+'clubs/'+codiClub+'/jugadors/',{
 		  method: 'GET',
 		  mode: 'no-cors',
 		  headers: {

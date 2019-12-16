@@ -26,7 +26,7 @@ class ClubCard extends Component {
 	    	            <h6 className="card-subtitle mb-2 text-muted">{this.props.club.nom}</h6>
 	    	        </div>
 	    	        <div className="card-footer">
-		    	        <Link to={"/ClubPage?club="+this.props.club.nom} >
+		    	        <Link to={"/ClubPage?club="+this.props.club.id} >
 		    	        	<button className="btn btn-dark">
 		    	        		<i className="fa fa-hand-o-right"></i> INFO
 		    	        	</button>

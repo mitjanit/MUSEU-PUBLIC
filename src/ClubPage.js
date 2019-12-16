@@ -9,11 +9,11 @@ class ClubPage extends Component {
 
   	const values = queryString.parse(this.props.location.search);
 
-  	let urlJugadors = "/JugadorsPage?club=".values.club;
+  	let urlJugadors = "/JugadorsPage?club=".values.id;
     
     return (
 	      <div className="ClubPage">
-	          <h2>Club {values.club}</h2>
+	          <h2>Club {values.id}</h2>
 	          <Link to={"/"}> Home </Link> &nbsp;
 	          <Link to={"/CountryPage"}> BACK </Link> &nbsp;
 	          <p> Info club .... jugadors</p>

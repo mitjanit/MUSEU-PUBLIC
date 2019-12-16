@@ -1,11 +1,47 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom";
+import axios from 'axios';
 import queryString from 'query-string';
+
+import {URL_API} from './Constants.js'
 
  
 class ClubPage extends Component {
 
-  render() {
+	constructor() {
+	    
+	    super();
+
+	    this.state = {
+	        jugadors: []
+	    };
+
+	}
+
+	componentDidMount() {
+
+		const values = queryString.parse(this.props.location.search);
+
+		var codiClub = values.club;
+
+		console.log("Accedint a la API "+URL_API+"/api/clubs/"+codiClub+"/jugadors/");
+	    axios.get(URL_API+'/api/clubs/"+codiClub+"/jugadors/',{
+		  method: 'GET',
+		  mode: 'no-cors',
+		  headers: {
+		    'Access-Control-Allow-Origin': '*',
+		    'Content-Type': 'application/json',
+		    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+		  }
+		})
+        .then(res => {
+          const info = res.data;
+          console.log(info);
+          this.setState({ jugadors : info });
+        })
+	}
+
+  	render() {
 
   	const values = queryString.parse(this.props.location.search);
 

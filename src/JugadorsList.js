@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JugadorCard from './JugadorCard.js';
+import Table from 'react-bootstrap/Table';
 
 class JugadorsList extends Component {
 
@@ -10,12 +11,22 @@ class JugadorsList extends Component {
 
 	render() {
 	    return ( 
-	    	<div className="card-deck">
-	    		<table>
+	    	<div>
+	    		<Table striped bordered hover>
+	    		  <thead>
+	    		    <tr>
+	    		      <th>Nom Esportiu</th>
+	    		      <th>Nom</th>
+	    		      <th>Llinatge 1</th>
+	    		      <th>Llinatge 2</th>
+	    		    </tr>
+	    		  </thead>
+	    		  <tbody>
 	            	{
 	                	this.props.jugadors.map(jugador => <JugadorCard key={jugador.id} jugador={jugador} />)
 	            	}
-	            </table>
+	               </tbody>
+	            </Table>
 	        </div>
 	    );
 	}

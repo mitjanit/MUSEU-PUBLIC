@@ -8,10 +8,9 @@ class JugadorsList extends Component {
         jugadors: []
     }
 
-
 	render() {
 	    return ( 
-	    	<div>
+	    	<div className="">
 	    		<Table striped bordered hover>
 	    		  <thead>
 	    		    <tr>
@@ -31,6 +30,5 @@ class JugadorsList extends Component {
 	    );
 	}
 }
-
 
 export default JugadorsList;

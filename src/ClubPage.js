@@ -54,7 +54,7 @@ class ClubPage extends Component {
 	      <div className="ClubPage">
 	          <h2>Club {values.club}</h2>
 	          <Link to={"/"}> Home </Link> &nbsp;
-	          <Link to={"/CountryPage"}> BACK </Link> &nbsp;
+	          <Link to={"/ClubPage.js?club="+values.club}> BACK </Link> &nbsp;
 	          <p> Info club .... jugadors</p>
 	          <JugadorsList jugadors={this.state.jugadors} />
 	      </div>

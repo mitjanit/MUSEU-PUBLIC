@@ -13,7 +13,7 @@ class ClubCard extends Component {
 
 	render() {
 
-		let imgURL = "escuts/"+this.props.club.nom+".jpg";
+		let imgURL = "escuts/"+this.props.club.id+".png";
 		let imgALT = this.props.club.nom;
 
 	    return (

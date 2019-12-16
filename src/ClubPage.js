@@ -46,9 +46,6 @@ class ClubPage extends Component {
 
   	const values = queryString.parse(this.props.location.search);
 
-  	console.log(values);
-
-  	let urlJugadors = "/JugadorsPage?club="+values.club;
     
     return (
 	      <div className="ClubPage">

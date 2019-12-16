@@ -11,7 +11,7 @@ class ClubPage extends Component {
 
   	console.log(values);
 
-  	let urlJugadors = "/JugadorsPage?club=".values.club;
+  	let urlJugadors = "/JugadorsPage?club="+values.club;
     
     return (
 	      <div className="ClubPage">

@@ -14,6 +14,7 @@ class ClubPage extends Component {
 	    super();
 
 	    this.state = {
+	    	clubNom: "",
 	        jugadors: []
 	    };
 
@@ -24,6 +25,27 @@ class ClubPage extends Component {
 		const values = queryString.parse(this.props.location.search);
 
 		var codiClub = values.club;
+
+		// Accés a informació dle club
+		console.log("Accedint a la API "+URL_API+"/api/clubs/"+codiClub);
+	    axios.get(URL_API+'clubs/'+codiClub,{
+		  method: 'GET',
+		  mode: 'no-cors',
+		  headers: {
+		    'Access-Control-Allow-Origin': '*',
+		    'Content-Type': 'application/json',
+		    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+		  }
+		})
+        .then(res => {
+          const info = res.data;
+          console.log(info);
+          this.setState({ clubNom : info.nom });
+        })
+
+
+
+		// Acces a dades dels jugadors del club
 
 		console.log("Accedint a la API "+URL_API+"/api/clubs/"+codiClub+"/jugadors/");
 	    axios.get(URL_API+'clubs/'+codiClub+'/jugadors/',{
@@ -49,7 +71,7 @@ class ClubPage extends Component {
     
     return (
 	      <div className="ClubPage">
-	          <h2>Club {values.club}</h2>
+	          <h2>Club {this.state.clubNom}</h2>
 	          <Link to={"/"}> Home </Link> &nbsp;
 	          <Link to={"/ClubPage.js?club="+values.club}> BACK </Link> &nbsp;
 	          <p> Info club .... jugadors</p>

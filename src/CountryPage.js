@@ -4,6 +4,7 @@ import queryString from 'query-string';
 
 import SpainMap from "./SpainMap";
 import CountryMap from "./CountryMap";
+import ClubsPais from "./ClubsPais";
  
 class CountryPage extends Component {
 
@@ -20,9 +21,11 @@ class CountryPage extends Component {
       stuff = <SpainMap />;
     }
     else {
-      stuff = <CountryMap continent={values.continent} 
+      /*stuff = <CountryMap continent={values.continent} 
       					 country={values.country}
-      					 scaleMap="2005" xMap="10" yMap="38" />;
+      					 scaleMap="2005" xMap="10" yMap="38" />;*/
+
+      stuff =<ClubsPais country={values.country} />
     }
 
     return (

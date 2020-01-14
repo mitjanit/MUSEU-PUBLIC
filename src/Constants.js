@@ -2,6 +2,7 @@
 export const URL_API = "http://www.museu.org/api/";
 
 export const provs = {};
+export const paisos = {};
 
 provs['Mallorca']=7;
 provs['Menorca']=51;
@@ -56,5 +57,9 @@ provs['Valladolid']=47;
 provs['Vizcaya']=48;
 provs['Zamora']=49;
 provs['Zaragoza']=50;
+
+
+paisos['Spain']=1;
+paisos['France']=2;
 
 

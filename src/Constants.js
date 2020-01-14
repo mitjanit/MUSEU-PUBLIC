@@ -60,6 +60,6 @@ provs['Zaragoza']=50;
 
 
 paisos['Spain']=1;
-paisos['France']=2;
+paisos['France']=1;
 
 

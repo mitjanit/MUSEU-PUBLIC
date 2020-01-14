@@ -36,9 +36,7 @@ class CountryPage extends Component {
 
 	          {stuff}
 
-	          <Link to={"/ClubPage?club=All"}> CLUB </Link>
-	          <Link to={"/ClubPage?club=RealMadrid"}> REAL MADRID </Link>
-	          <Link to={"/ClubPage?club=FCBarcelona"}> FC BARCELONA </Link>
+	         
 	      </div>
     );
   }

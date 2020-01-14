@@ -41,7 +41,7 @@ class ClubsPais extends Component {
 	        <div className="container-fluid">
 	            <div className="d-flex flex-row">                    
 	                <div className="col-sm-12">
-	                	<p>{this.props.provincia}</p>
+	                	<p>{this.props.country}</p>
 	                    <ClubsList clubs={this.state.clubs} />
 	                </div>
 	            </div>
